@@ -638,6 +638,10 @@ section { padding: 60px 0; }
 
 .chapter-row .arrow { color: var(--ink-faint); font-size: 0.9rem; font-weight: 800; }
 
+.chapter-row.disabled { cursor: default; opacity: 0.7; }
+.chapter-row.disabled:hover { background: none; }
+.chapter-row.disabled .name { color: var(--ink-faint); font-weight: 600; }
+
 /* ===========================================================
    Page Chapitre
    =========================================================== */
