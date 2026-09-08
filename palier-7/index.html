@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔴 Palier 7 — L'analyse des données — Déclic SEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><img src="../logo-declic-seo.png" class="logo-mark" alt="Déclic SEO"> Déclic SEO</a>
+    <nav class="main-nav">
+      <a href="../index.html">Accueil</a>
+      <a href="../programme.html">Programme</a>
+      <a href="#">À propos</a>
+    </nav>
+    <a href="../programme.html" class="btn btn-primary btn-sm">Voir le programme</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="../index.html">Accueil</a>
+    <a href="../programme.html">Programme</a>
+    <a href="#">À propos</a>
+    <a href="../programme.html" class="btn btn-primary">Voir le programme</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="../programme.html">Programme</a> <span>/</span>
+      <span>🔴 Palier 7 — L'analyse des données</span>
+    </nav>
+    <h1>🔴 Palier 7 — L'analyse des données</h1>
+    <p>3 chapitres · 0 publié. Clique sur un chapitre publié pour l'ouvrir directement.</p>
+  </div>
+</section>
+
+<section class="programme-list">
+  <div class="container">
+
+    <details class="palier-block" open>
+      <summary>
+        <div class="badge" style="background:var(--palier-7-bg);color:var(--palier-7)">07</div>
+        <div class="titles">
+          <h2>🔴 Palier 7 — L'analyse des données</h2>
+          <div class="sub">3 chapitres · 0 publié</div>
+        </div>
+        <span class="chev">⌄</span>
+      </summary>
+      <div class="chapter-rows">
+        <div class="chapter-row disabled"><span class="idx">01</span><span class="name">Découvrir la Google Search Console</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">02</span><span class="name">Lire et interpréter ses rapports de performance</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">03</span><span class="name">Notions de base avec Google Analytics</span><span class="status status-draft">À venir</span></div>
+      </div>
+    </details>
+
+    <div class="next-card">
+      <div class="next-card-prev-row">
+        <a href="../palier-6/index.html">← 🟡 Palier 6 — Le SEO de popularité</a>
+      </div>
+      <div class="next-card-body">
+        <div>
+          <div class="label">Palier suivant</div>
+          <h3>🔴 Palier 8 — Pour aller plus loin</h3>
+        </div>
+        <a href="../palier-8/index.html" class="btn btn-primary">Continuer →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Déclic SEO — Formation libre SEO &amp; GEO</span>
+    <div class="footer-links">
+      <a href="../programme.html">Programme</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var toggle = document.querySelector(".nav-toggle");
+  var menu = document.querySelector(".mobile-nav");
+  if (!toggle || !menu) return;
+  toggle.addEventListener("click", function () {
+    var open = menu.classList.toggle("open");
+    toggle.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+})();
+</script>
+
+</body>
+</html>

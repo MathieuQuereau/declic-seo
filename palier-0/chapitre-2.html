@@ -34,7 +34,7 @@
 <div class="container">
   <nav class="breadcrumb">
     <a href="../programme.html">Programme</a> <span>/</span>
-    <a href="../programme.html">🟢 Palier 0 — Comprendre le terrain de jeu</a> <span>/</span>
+    <a href="index.html">🟢 Palier 0 — Comprendre le terrain de jeu</a> <span>/</span>
     <span>Chapitre 2</span>
   </nav>
 </div>
@@ -176,31 +176,31 @@
       <div class="quiz-question">
         <p class="question-title">Question 1 — Dans quel ordre se déroulent les 3 étapes d'un moteur de recherche ?</p>
         <div class="quiz-options">
-          <div class="quiz-option"><span class="letter">A</span> Classement → Indexation → Crawl</div>
-          <div class="quiz-option"><span class="letter">B</span> Indexation → Crawl → Classement</div>
-          <div class="quiz-option correct"><span class="letter">C</span> Crawl → Indexation → Classement</div>
-          <div class="quiz-option"><span class="letter">D</span> Classement → Crawl → Indexation</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Classement → Indexation → Crawl</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">B</span> Indexation → Crawl → Classement</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">C</span> Crawl → Indexation → Classement</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Classement → Crawl → Indexation</div>
         </div>
         <div class="quiz-explain">💡 <span><strong>Bonne réponse : C.</strong> Impossible de classer ce qui n'a pas encore été crawlé et indexé.</span></div>
       </div>
 
-      <div class="quiz-question">
+      <div class="quiz-question" hidden>
         <p class="question-title">Question 2 — Une page en ligne est-elle forcément dans l'index de Google ?</p>
         <div class="quiz-options">
-          <div class="quiz-option"><span class="letter">A</span> Oui, dès qu'une page est en ligne, Google la trouve automatiquement</div>
-          <div class="quiz-option correct"><span class="letter">B</span> Non, une page peut très bien être en ligne sans jamais avoir été indexée</div>
-          <div class="quiz-option"><span class="letter">C</span> Oui, si le site existe depuis plus de 6 mois</div>
-          <div class="quiz-option"><span class="letter">D</span> Non, mais seulement pour un site e-commerce</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Oui, dès qu'une page est en ligne, Google la trouve automatiquement</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">B</span> Non, une page peut très bien être en ligne sans jamais avoir été indexée</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">C</span> Oui, si le site existe depuis plus de 6 mois</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Non, mais seulement pour un site e-commerce</div>
         </div>
         <div class="quiz-explain">💡 <span><strong>Bonne réponse : B.</strong> Sans lien pointant vers elle ni sitemap, Googlebot ne la trouvera peut-être jamais.</span></div>
       </div>
 
-      <div class="quiz-score">
+      <div class="quiz-score" hidden>
         <div style="font-size:0.85rem;font-weight:700;color:var(--ink-faint);">Ton score</div>
         <div class="score-num">2/2</div>
         <p>Parfait ! Tu es prêt pour la suite.</p>
         <div class="score-actions">
-          <button class="btn btn-ghost">↻ Refaire le quiz</button>
+          <button type="button" class="btn btn-ghost">↻ Refaire le quiz</button>
           <a href="chapitre-3.html" class="btn btn-primary">Chapitre suivant →</a>
         </div>
       </div>
@@ -275,6 +275,7 @@
   });
 })();
 </script>
+<script src="../quiz.js"></script>
 
 </body>
 </html>

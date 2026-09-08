@@ -34,7 +34,7 @@
 <div class="container">
   <nav class="breadcrumb">
     <a href="../programme.html">Programme</a> <span>/</span>
-    <a href="../programme.html">🟢 Palier 0 — Comprendre le terrain de jeu</a> <span>/</span>
+    <a href="index.html">🟢 Palier 0 — Comprendre le terrain de jeu</a> <span>/</span>
     <span>Chapitre 1</span>
   </nav>
 </div>
@@ -190,31 +190,31 @@
       <div class="quiz-question">
         <p class="question-title">Question 1 — Qu'est-ce qu'un serveur ?</p>
         <div class="quiz-options">
-          <div class="quiz-option"><span class="letter">A</span> Un logiciel installé sur ton ordinateur personnel</div>
-          <div class="quiz-option correct"><span class="letter">B</span> Un ordinateur allumé en permanence qui stocke et envoie les fichiers d'un site web</div>
-          <div class="quiz-option"><span class="letter">C</span> Un autre nom pour désigner Google</div>
-          <div class="quiz-option"><span class="letter">D</span> Le nom de domaine d'un site</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Un logiciel installé sur ton ordinateur personnel</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">B</span> Un ordinateur allumé en permanence qui stocke et envoie les fichiers d'un site web</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">C</span> Un autre nom pour désigner Google</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Le nom de domaine d'un site</div>
         </div>
         <div class="quiz-explain">💡 <span><strong>Bonne réponse : B.</strong> Un serveur est une machine dédiée, allumée 24h/24, dont le rôle est de répondre aux demandes des navigateurs en leur envoyant les fichiers du site.</span></div>
       </div>
 
-      <div class="quiz-question">
+      <div class="quiz-question" hidden>
         <p class="question-title">Question 2 — À quoi sert le DNS ?</p>
         <div class="quiz-options">
-          <div class="quiz-option"><span class="letter">A</span> À héberger les fichiers d'un site</div>
-          <div class="quiz-option"><span class="letter">B</span> À rendre une page interactive</div>
-          <div class="quiz-option correct"><span class="letter">C</span> À traduire un nom de domaine en adresse numérique compréhensible par les machines</div>
-          <div class="quiz-option"><span class="letter">D</span> À afficher les couleurs d'une page</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> À héberger les fichiers d'un site</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">B</span> À rendre une page interactive</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">C</span> À traduire un nom de domaine en adresse numérique compréhensible par les machines</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> À afficher les couleurs d'une page</div>
         </div>
         <div class="quiz-explain">💡 <span><strong>Bonne réponse : C.</strong> Le DNS fonctionne comme un annuaire : il permet à ton navigateur de trouver l'adresse IP correspondant à un nom de domaine.</span></div>
       </div>
 
-      <div class="quiz-score">
+      <div class="quiz-score" hidden>
         <div style="font-size:0.85rem;font-weight:700;color:var(--ink-faint);">Ton score</div>
         <div class="score-num">2/2</div>
         <p>Bravo, tu maîtrises les bases ! Direction le chapitre suivant.</p>
         <div class="score-actions">
-          <button class="btn btn-ghost">↻ Refaire le quiz</button>
+          <button type="button" class="btn btn-ghost">↻ Refaire le quiz</button>
           <a href="chapitre-2.html" class="btn btn-primary">Chapitre suivant →</a>
         </div>
       </div>
@@ -286,6 +286,7 @@
   });
 })();
 </script>
+<script src="../quiz.js"></script>
 
 </body>
 </html>

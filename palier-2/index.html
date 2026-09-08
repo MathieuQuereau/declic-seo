@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🟢 Palier 2 — La webperformance — Déclic SEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo"><img src="../logo-declic-seo.png" class="logo-mark" alt="Déclic SEO"> Déclic SEO</a>
+    <nav class="main-nav">
+      <a href="../index.html">Accueil</a>
+      <a href="../programme.html">Programme</a>
+      <a href="#">À propos</a>
+    </nav>
+    <a href="../programme.html" class="btn btn-primary btn-sm">Voir le programme</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="../index.html">Accueil</a>
+    <a href="../programme.html">Programme</a>
+    <a href="#">À propos</a>
+    <a href="../programme.html" class="btn btn-primary">Voir le programme</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="../programme.html">Programme</a> <span>/</span>
+      <span>🟢 Palier 2 — La webperformance</span>
+    </nav>
+    <h1>🟢 Palier 2 — La webperformance</h1>
+    <p>8 chapitres · 0 publié. Clique sur un chapitre publié pour l'ouvrir directement.</p>
+  </div>
+</section>
+
+<section class="programme-list">
+  <div class="container">
+
+    <details class="palier-block" open>
+      <summary>
+        <div class="badge" style="background:var(--palier-2-bg);color:var(--palier-2)">02</div>
+        <div class="titles">
+          <h2>🟢 Palier 2 — La webperformance</h2>
+          <div class="sub">8 chapitres · 0 publié</div>
+        </div>
+        <span class="chev">⌄</span>
+      </summary>
+      <div class="chapter-rows">
+        <div class="chapter-row disabled"><span class="idx">01</span><span class="name">Les Core Web Vitals expliqués simplement</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">02</span><span class="name">Le poids des images et pourquoi ça ralentit ton site</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">03</span><span class="name">Les formats d'image modernes (WebP/AVIF)</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">04</span><span class="name">Le lazy loading, c'est quoi ?</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">05</span><span class="name">La mise en cache, expliquée simplement</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">06</span><span class="name">La minification du code (CSS/JS)</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">07</span><span class="name">Le CDN, c'est quoi et pour qui ?</span><span class="status status-draft">À venir</span></div>
+        <div class="chapter-row disabled"><span class="idx">08</span><span class="name">Le temps de réponse serveur (TTFB)</span><span class="status status-draft">À venir</span></div>
+      </div>
+    </details>
+
+    <div class="next-card">
+      <div class="next-card-prev-row">
+        <a href="../palier-1/index.html">← 🟢 Palier 1 — L'architecture technique</a>
+      </div>
+      <div class="next-card-body">
+        <div>
+          <div class="label">Palier suivant</div>
+          <h3>🟢 Palier 3 — Les balises et signaux techniques</h3>
+        </div>
+        <a href="../palier-3/index.html" class="btn btn-primary">Continuer →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Déclic SEO — Formation libre SEO &amp; GEO</span>
+    <div class="footer-links">
+      <a href="../programme.html">Programme</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var toggle = document.querySelector(".nav-toggle");
+  var menu = document.querySelector(".mobile-nav");
+  if (!toggle || !menu) return;
+  toggle.addEventListener("click", function () {
+    var open = menu.classList.toggle("open");
+    toggle.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+})();
+</script>
+
+</body>
+</html>
