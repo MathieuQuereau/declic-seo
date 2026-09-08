@@ -1,0 +1,8 @@
+US-07 — Gérer les quiz (admin)
+
+En tant qu'administrateur, je veux ajouter et modifier les questions QCM de chaque chapitre, pour maintenir le contenu à jour.
+
+Critères d'acceptation :
+- Chaque question a : un énoncé, 3 à 4 propositions, 1 bonne réponse identifiée, une explication
+- Les questions sont associées à un chapitre précis
+- Modification possible sans republier tout le chapitre

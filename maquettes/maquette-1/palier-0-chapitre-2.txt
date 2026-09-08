@@ -1,0 +1,140 @@
+Chapitre 2 — Comment fonctionne un moteur de recherche ?
+Palier 0 — Comprendre le terrain de jeu
+
+1. Accroche
+Il y a plusieurs milliards de pages web sur Internet. Quand tu tapes "meilleure recette de tiramisu" dans Google, il te répond en moins d'une seconde avec une liste de résultats triés, pertinents, et classés dans un ordre précis.
+Comment il fait ? Il ne "cherche" pas sur Internet en temps réel à chaque requête — ce serait beaucoup trop lent. Ce que Google fait en réalité, c'est bien plus malin : il a préparé le travail à l'avance, en permanence, en cartographiant une immense partie du web avant même que tu ne poses ta question.
+Comprendre ce mécanisme en 3 étapes (on les appelle crawl, indexation, classement) est le fondement de toute stratégie SEO. Si tu ne comprends pas ça, le reste ne tiendra jamais.
+
+2. Ce que tu vas apprendre
+À la fin de ce chapitre, tu sauras :
+Ce qu'est le crawl (l'exploration du web par les moteurs)
+Ce qu'est l'indexation (la mise en mémoire des pages explorées)
+Comment un moteur de recherche classe les résultats (le classement)
+Ce qu'est l'autorité d'un site et pourquoi elle compte
+Pourquoi une page peut exister sur le web sans jamais apparaître dans Google
+
+3. Le concept expliqué simplement
+Un moteur de recherche fonctionne en 3 grandes étapes, dans cet ordre. Il ne peut pas sauter d'étape.
+Étape 1 — Le crawl (l'exploration)
+Les moteurs de recherche envoient en permanence des petits programmes automatiques sur le web. On les appelle des robots d'indexation, des crawlers, ou encore des spiders (araignées — l'image de l'araignée qui tisse sa toile sur le web). Chez Google, le principal s'appelle Googlebot.
+Ces robots se déplacent de page en page en suivant les liens. Quand ils arrivent sur une page, ils en lisent le contenu, puis suivent tous les liens présents sur cette page pour aller explorer d'autres pages, qui elles-mêmes contiennent d'autres liens, et ainsi de suite. Exactement comme une araignée qui suit les fils de sa toile.
+💡 Analogie : imagine un explorateur chargé de cartographier une ville. Il part d'un point A, remonte chaque rue, note ce qu'il voit, puis prend chaque intersection pour découvrir de nouvelles rues. C'est exactement ce que fait Googlebot sur le web.
+Ce que Googlebot "voit" quand il visite une page :
+Le texte (titres, paragraphes, liens...)
+La structure HTML (les balises)
+Les liens vers d'autres pages
+La vitesse à laquelle la page se charge
+Si la page est accessible en version mobile
+Ce que Googlebot ne "voit" pas (ou mal) :
+Les contenus cachés derrière un login (espace client, contenu privé)
+Certains contenus générés uniquement par JavaScript (on reverra ça en Palier 1)
+Les images (sauf leur texte alternatif — on verra ça plus tard)
+Étape 2 — L'indexation (la mise en mémoire)
+Une fois qu'un robot a visité et analysé une page, il en envoie une copie dans une immense base de données : l'index de Google. C'est un peu comme une bibliothèque colossale où chaque page du web a sa fiche, avec une description de son contenu.
+Quand Google "indexe" une page, il note :
+De quoi elle parle (les thèmes, les mots-clés présents)
+Comment elle est structurée
+Qui lui fait confiance (quels autres sites font des liens vers elle)
+Quand elle a été mise à jour pour la dernière fois
+⚠️ Point crucial : ce n'est pas parce qu'une page existe sur le web qu'elle est automatiquement dans l'index de Google. Si aucun lien ne pointe vers elle (donc si Googlebot ne peut pas "la trouver"), ou si elle est techniquement bloquée, elle peut très bien n'avoir jamais été indexée — et donc n'apparaître dans aucun résultat de recherche. C'est pourquoi le SEO technique (qu'on verra en Palier 1) est si important.
+Étape 3 — Le classement (l'algorithme)
+Quand tu poses une question à Google, il ne refait pas le travail depuis le début. Il consulte son index et choisit, parmi toutes les pages qui correspondent à ta recherche, lesquelles afficher en premier.
+Ce choix est fait par son algorithme — un système de calcul très complexe qui prend en compte des centaines de critères pour décider quel résultat mérite d'être en position 1, en position 2, etc. On ne connaît pas tous ces critères (Google ne les publie pas tous), mais les plus importants sont :
+La pertinence : le contenu de la page répond-il vraiment à la question posée ?
+La qualité : le contenu est-il bien écrit, fiable, complet, à jour ?
+L'autorité : est-ce que d'autres sites font confiance à cette page (en y faisant des liens) ?
+L'expérience utilisateur : la page se charge-t-elle vite ? Est-elle lisible sur mobile ?
+L'autorité, c'est quoi ?
+C'est une notion fondamentale en SEO, souvent mal comprise au début. L'autorité d'une page (ou d'un site entier) mesure à quel point le reste du web lui fait confiance.
+La logique de Google est simple : si beaucoup de sites sérieux font un lien vers ta page, c'est probablement parce que ton contenu est de qualité et digne de confiance. C'est un peu le même principe que les citations dans un article scientifique — plus tu es cité par d'autres chercheurs reconnus, plus ton travail est considéré comme fiable.
+💡 Analogie : l'autorité d'un site, c'est comme la réputation d'un restaurant. Un restaurant dont tous tes amis disent du bien, qui est cité dans des guides gastronomiques reconnus, et qui tourne depuis 20 ans, inspire bien plus confiance qu'un restaurant qui vient d'ouvrir et dont personne ne parle — même s'il cuisine aussi bien.
+
+4. Exemple concret
+Tape n'importe quelle question dans Google — par exemple "comment créer un blog".
+Observe la page de résultats (on appelle ça la SERP, Search Engine Results Page). Tu vois :
+Les titres bleus cliquables → ce sont les balises <title> des pages
+Les courtes descriptions en gris → ce sont les meta descriptions (ou des extraits générés automatiquement)
+L'ordre des résultats → c'est le classement par l'algorithme
+Maintenant pose-toi la question : pourquoi la page en position 1 est-elle là, et pas en position 10 ? Ce n'est pas le hasard. C'est le résultat du travail de crawl, d'indexation et d'analyse par l'algorithme qu'on vient de décrire.
+Ce que tu vois sur cette SERP, c'est l'aboutissement de plusieurs semaines ou mois de travail SEO sur chacun de ces sites — du contenu rédigé en réponse à une intention de recherche précise, sur un site techniquement accessible à Googlebot, avec une autorité construite progressivement.
+
+5. Comment le mettre en pratique
+Pour ce chapitre, il n'y a pas encore d'action technique directe à réaliser sur un site — on est encore en phase de compréhension. En revanche, voici un parcours pour ancrer ces notions de façon concrète.
+Étape 1 — Observe la SERP comme un SEO
+Prends un sujet qui te concerne (ton secteur d'activité, un produit que tu vends, un service que tu proposes). Tape-le dans Google. Avant de cliquer sur quoi que ce soit, observe :
+Combien de résultats apparaissent en première page ? (généralement 10 résultats "organiques", c'est-à-dire non-payants)
+Est-ce qu'il y a des résultats payants en haut (indiqués "Sponsorisé") ? Ce sont des annonces Google Ads, pas du SEO — on voit bien la frontière entre les deux.
+Est-ce que Google affiche des résultats spéciaux (une réponse directe en haut de page, une carte Google Maps, des vidéos YouTube) ? Ces "formats enrichis" ont aussi des règles SEO spécifiques qu'on verra plus tard.
+⚠️ Piège fréquent du débutant : confondre résultats payants (Google Ads) et résultats naturels (SEO). Le SEO ne coûte pas d'argent à Google directement — tu ne paies pas pour être bien classé. Tu travailles pour le mériter. Les annonces payantes, elles, disparaissent dès que tu arrêtes de payer.
+Étape 2 — Vérifie si une page est indexée
+Il existe une façon simple de vérifier si Google a bien indexé une page précise. Dans la barre de recherche Google, tape exactement :
+site:monsite.fr
+(remplace monsite.fr par le site de ton choix)
+Google te répond avec toutes les pages de ce site qu'il a dans son index. Si le résultat est vide — aucune page affichée — c'est que le site n'est pas indexé, ou très peu. C'est un problème SEO immédiat.
+⚠️ Piège fréquent du débutant : penser qu'un site "neuf" est automatiquement indexé parce qu'il est en ligne. Ce n'est pas le cas. Google doit d'abord trouver la page (via des liens ou via le sitemap — on verra ça en Palier 1), puis décider de l'indexer. Ça peut prendre de quelques jours à plusieurs semaines sur un site tout neuf.
+Étape 3 — Prends conscience de l'échelle
+Tape dans Google : site:wikipedia.org. Tu obtiens le nombre de pages de Wikipédia dans l'index de Google. C'est souvent plusieurs dizaines de millions de pages.
+Maintenant tape site: suivi du nom d'un petit site local. Tu vois peut-être 5, 10, 50 pages indexées.
+Cette différence d'échelle, c'est une différence d'autorité et de profondeur de contenu — deux des piliers du SEO qu'on construira ensemble tout au long de cette formation.
+
+6. Le jargon de ce chapitre
+Terme
+Définition simple
+Crawler / Spider / Robot d'indexation
+Programme automatique envoyé par un moteur de recherche pour explorer les pages du web en suivant les liens.
+Googlebot
+Le nom du crawler principal de Google.
+Crawl
+L'action d'explorer le web : le robot "crawle" les pages, c'est-à-dire les visite et les analyse.
+Indexation
+Le fait pour Google d'enregistrer une page dans sa base de données après l'avoir crawlée. Une page indexée peut apparaître dans les résultats.
+Index
+La base de données gigantesque de Google qui contient une copie analysée de milliards de pages web.
+Algorithme
+Le système de calcul de Google qui décide dans quel ordre classer les pages dans les résultats.
+SERP
+Search Engine Results Page — la page de résultats que tu vois quand tu fais une recherche sur Google.
+Résultats organiques
+Les résultats naturels (non payants) classés par l'algorithme — c'est ce que vise le SEO.
+Autorité
+La "réputation" d'un site aux yeux de Google, mesurée notamment par le nombre et la qualité des liens que d'autres sites font vers lui.
+Google Ads
+Le système de publicité payante de Google, distinct du SEO — les annonces disparaissent dès qu'on arrête de payer.
+
+
+7. Et après ?
+Tu sais maintenant comment un moteur de recherche explore, mémorise et classe les pages web. Mais Google n'est pas "un moteur de recherche générique" — c'est le moteur dominant, avec ses propres règles, ses propres outils, et ses propres façons de communiquer avec les webmasters. Dans le Chapitre 3 — Comment fonctionne Google, concrètement ?, on va entrer dans les spécificités de Google : ses mises à jour d'algorithme, ses outils officiels, et ce qu'il attend vraiment d'un site pour le mettre en avant.
+
+8. Quiz — Vérifie que tu as compris
+Question 1 — Dans quel ordre se déroulent les 3 étapes d'un moteur de recherche ?
+A) Classement → Indexation → Crawl
+B) Indexation → Crawl → Classement
+C) Crawl → Indexation → Classement
+D) Classement → Crawl → Indexation
+✅ Bonne réponse : C Le moteur doit d'abord explorer la page (crawl), puis l'enregistrer dans sa base de données (indexation), et ce n'est qu'ensuite qu'il peut la classer dans les résultats. Impossible de classer ce qui n'a pas encore été crawlé et indexé.
+Question 2 — Une page est en ligne sur Internet. Est-elle forcément dans l'index de Google ?
+A) Oui, dès qu'une page est en ligne, Google la trouve automatiquement
+B) Non, une page peut très bien être en ligne sans jamais avoir été indexée par Google
+C) Oui, si le site existe depuis plus de 6 mois
+D) Non, mais seulement si c'est un site e-commerce
+✅ Bonne réponse : B Être en ligne ne garantit pas d'être indexé. Si aucun lien ne pointe vers la page et qu'elle n'est pas déclarée dans un sitemap, Googlebot ne la trouvera peut-être jamais. Des blocages techniques peuvent aussi empêcher l'indexation — c'est une des premières choses à vérifier en SEO.
+Question 3 — Qu'est-ce que l'autorité d'un site ?
+A) Le fait que le site soit ancien (plus de 10 ans)
+B) La mesure de la confiance que le reste du web lui accorde, notamment via les liens entrants
+C) Le nombre de pages que contient le site
+D) La vitesse de chargement du site
+✅ Bonne réponse : B L'autorité d'un site se construit principalement grâce aux liens d'autres sites qui pointent vers lui. L'ancienneté peut jouer un rôle indirect (un site ancien a eu le temps d'accumuler des liens), mais ce n'est pas en soi un facteur d'autorité. On approfondira tout ça dans le Palier 6 consacré au netlinking.
+Question 4 — Quelle est la différence entre un résultat organique et une annonce Google Ads sur la SERP ?
+A) Aucune, c'est la même chose mais avec des noms différents
+B) Les résultats organiques sont payants, les Google Ads sont gratuits
+C) Les résultats organiques sont classés par l'algorithme sans paiement direct, les Google Ads sont des annonces payantes
+D) Google Ads n'existe plus depuis 2023
+✅ Bonne réponse : C Le SEO vise les résultats organiques : tu ne paies pas Google pour apparaître, tu travailles à mériter ta place. Les annonces Google Ads fonctionnent à l'inverse : tu paies pour être visible, mais dès que tu arrêtes de payer, tu disparais. Les deux coexistent sur la même SERP.
+Question 5 — Comment vérifier rapidement si un site est indexé par Google ?
+A) En allant sur google.com/admin
+B) En tapant site:monsite.fr dans la barre de recherche Google
+C) En regardant la date de création du nom de domaine
+D) En contactant le support Google
+✅ Bonne réponse : B La commande site:monsite.fr dans Google est le moyen le plus rapide et gratuit de vérifier si Google a des pages de ton site dans son index, et combien. On verra d'autres outils plus poussés dans le Palier 7 consacré à l'analyse des données.
+

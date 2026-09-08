@@ -1,0 +1,8 @@
+US-01 — Découvrir le site sans compte
+
+En tant que visiteur, je veux accéder à la page d'accueil et comprendre immédiatement de quoi parle le site, pour décider si ça correspond à mon besoin.
+
+Critères d'acceptation :
+- La page d'accueil présente clairement la promesse du site en moins de 5 secondes de lecture
+- Les 9 paliers sont visibles avec leur titre et une courte description
+- Aucune inscription n'est requise pour commencer à lire

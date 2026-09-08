@@ -1,0 +1,113 @@
+Chapitre 1 — Comment fonctionne Internet et un site web ?
+Palier 0 — Comprendre le terrain de jeu
+
+1. Accroche
+Tu tapes une adresse dans ton navigateur, genre monsite.fr, tu appuies sur Entrée, et 2 secondes plus tard, une page s'affiche devant toi.
+Tu t'es déjà demandé ce qu'il se passe réellement entre le moment où tu appuies sur Entrée et le moment où la page apparaît ?
+Spoiler : il se passe beaucoup de choses, très vite, et comprendre ce mécanisme est la toute première brique pour comprendre le SEO. On ne peut pas optimiser un site pour Google si on ne sait pas, déjà, ce qu'est un site et comment il "vit" sur Internet.
+On démarre ici, à zéro, sans rien supposer que tu connaisses déjà.
+
+2. Ce que tu vas apprendre
+À la fin de ce chapitre, tu sauras :
+Ce qu'est concrètement Internet (pas la version "magique", la version réelle)
+Ce qu'est un site web et de quoi il est fait
+Ce qu'il se passe entre ton clic et l'affichage de la page
+Pourquoi cette mécanique est la base de tout ce qu'on va voir ensuite en SEO
+
+3. Le concept expliqué simplement
+Internet, c'est quoi en vrai ?
+Oublie l'image du "nuage" flou qu'on voit dans les pubs. Internet, c'est un immense réseau d'ordinateurs connectés entre eux, partout dans le monde, qui peuvent s'échanger des informations.
+Imagine le réseau routier d'un pays. Les routes relient des villes entre elles. Internet, c'est pareil, sauf que :
+Les "villes" sont des ordinateurs (le tien, mais aussi des machines spécialisées appelées serveurs)
+Les "routes" sont des câbles (souvent en fibre optique, parfois sous l'océan) ou des ondes (wifi, 4G/5G)
+Ce qui circule sur ces routes, ce sont des données : du texte, des images, des vidéos, etc.
+Un site web, c'est quoi concrètement ?
+Un site web, ce n'est rien de plus qu'un ensemble de fichiers stockés sur un ordinateur, qu'on appelle un serveur. Ce serveur est un ordinateur un peu particulier : il reste allumé 24h/24, 7j/7, et son seul travail est d'attendre que quelqu'un lui demande ses fichiers pour les envoyer.
+Ces fichiers, ce sont principalement :
+Des fichiers HTML → le squelette de la page (le texte, la structure : "ici un titre, ici un paragraphe, ici une image")
+Des fichiers CSS → l'habillage visuel (les couleurs, les polices, l'agencement)
+Des fichiers JavaScript → les interactions (un menu qui s'ouvre, un bouton qui réagit)
+Des fichiers médias → images, vidéos, etc.
+💡 Analogie simple : si un site web était une maison, le HTML serait les murs et les pièces (la structure), le CSS serait la peinture, la déco, le choix des meubles (l'apparence), et le JavaScript serait l'électricité et la plomberie qui font fonctionner les choses (les interactions).
+Que se passe-t-il quand tu tapes une adresse ?
+Voici la séquence réelle, simplifiée, de ce qu'il se passe en une fraction de seconde :
+Tu tapes monsite.fr dans ton navigateur (Chrome, Safari, Firefox...)
+Ton navigateur a besoin de savoir où se trouve le serveur qui héberge ce site. Pour ça, il interroge un service un peu comme un "annuaire géant d'Internet", appelé DNS (Domain Name System), qui traduit monsite.fr en une adresse numérique compréhensible par les machines (appelée adresse IP, par exemple 192.168.1.1)
+Ton navigateur "frappe à la porte" de ce serveur et lui demande : "Envoie-moi les fichiers de ta page d'accueil"
+Le serveur répond et envoie les fichiers (HTML, CSS, JavaScript, images...)
+Ton navigateur reçoit ces fichiers et les assemble sous tes yeux pour afficher la page que tu vois à l'écran
+Tout ça se produit généralement en moins d'une seconde. C'est ce qu'on appelle une requête (ta demande) et une réponse (ce que le serveur t'envoie).
+
+4. Exemple concret
+Pour bien visualiser, voici ce que ton navigateur "voit" réellement avant de le transformer en jolie page : le code HTML brut. La plupart des navigateurs permettent de l'afficher via un clic droit → "Afficher le code source de la page" (ou Ctrl+U sur Windows, Cmd+Option+U sur Mac).
+Tu y verras des éléments comme ceux-ci, qui ressemblent à ça :
+html
+<h1>Bienvenue sur mon site</h1>
+<p>Voici un paragraphe de texte.</p>
+<img src="photo.jpg" alt="Une photo">
+Ce n'est rien de plus que du texte structuré avec des "balises" (les éléments entre < >) qui disent au navigateur "ceci est un titre", "ceci est un paragraphe", "ceci est une image". Le navigateur lit ce code et l'affiche de façon visuelle.
+Tu n'as pas besoin de savoir l'écrire toi-même à ce stade — l'important est de comprendre que chaque page que tu visites repose sur ce principe, même les sites les plus sophistiqués.
+
+5. Comment le mettre en pratique
+Voici un petit parcours pour que cette mécanique devienne concrète pour toi, pas juste théorique.
+Étape 1 — Observe le code source d'un site que tu connais bien
+Va sur un site que tu visites souvent, fais un clic droit n'importe où sur la page, puis clique sur "Afficher le code source de la page".
+⚠️ Piège fréquent du débutant : tu vas tomber sur un mur de texte qui semble illisible, parfois très long. C'est normal, ne cherche pas à tout comprendre. Concentre-toi simplement sur le fait de repérer quelques mots familiers comme <title>, <h1>, ou <img>. Le but ici n'est pas de tout déchiffrer, juste de réaliser que "oui, derrière chaque page, il y a bien du texte structuré".
+Étape 2 — Identifie le nom de domaine
+Reprends l'adresse du site que tu viens de consulter (par exemple https://www.exemple.fr/page). Le nom de domaine, c'est la partie exemple.fr. C'est l'équivalent d'une adresse postale pour ton site : c'est ce qui permet aux internautes (et à Google) de te trouver.
+⚠️ Piège fréquent du débutant : confondre nom de domaine et hébergement. Le nom de domaine est l'adresse (monsite.fr), l'hébergement est le serveur qui stocke réellement les fichiers. Ce sont deux choses différentes, souvent vendues par des prestataires différents (même si certains proposent les deux en même temps).
+Étape 3 — Comprends pourquoi un site peut être lent ou rapide
+Maintenant que tu sais qu'une page, c'est un ensemble de fichiers envoyés par un serveur, tu peux déjà deviner pourquoi certains sites sont plus lents que d'autres : plus il y a de fichiers à envoyer (et plus ils sont lourds, comme des images mal optimisées), plus ça prend de temps. On reverra ça en détail dans le palier consacré à la webperformance — mais le principe de base, tu le tiens déjà.
+
+6. Le jargon de ce chapitre
+Terme
+Définition simple
+Internet
+Le réseau mondial qui relie des ordinateurs entre eux et leur permet d'échanger des données.
+Serveur
+Un ordinateur allumé en permanence, qui stocke les fichiers d'un site web et les envoie quand on les demande.
+HTML
+Le langage qui structure le contenu d'une page (titres, paragraphes, images...).
+CSS
+Le langage qui définit l'apparence visuelle d'une page (couleurs, mise en page...).
+JavaScript
+Le langage qui rend une page interactive (menus, animations, formulaires...).
+DNS
+Le système qui traduit un nom de domaine (monsite.fr) en adresse numérique compréhensible par les machines.
+Nom de domaine
+L'adresse d'un site web (ex : monsite.fr).
+Hébergement
+Le service qui fournit le serveur où sont stockés les fichiers d'un site.
+Requête / Réponse
+La demande envoyée par ton navigateur à un serveur, et la réponse que ce serveur lui renvoie.
+
+
+7. Et après ?
+Maintenant que tu sais comment fonctionne un site web, l'étape logique suivante est de comprendre comment Google explore ces millions de sites pour ensuite décider lesquels afficher dans ses résultats. C'est tout l'objet du Chapitre 2 — Comment fonctionne un moteur de recherche ?
+
+8. Quiz — Vérifie que tu as compris
+Question 1 — Qu'est-ce qu'un serveur ?
+A) Un logiciel installé sur ton ordinateur personnel
+B) Un ordinateur allumé en permanence qui stocke et envoie les fichiers d'un site web
+C) Un autre nom pour désigner Google
+D) Le nom de domaine d'un site
+✅ Bonne réponse : B Un serveur est une machine dédiée, allumée 24h/24, dont le rôle est de répondre aux demandes des navigateurs en leur envoyant les fichiers du site. Ce n'est ni un logiciel, ni Google, ni un nom de domaine — ces notions sont différentes mais souvent confondues au début.
+Question 2 — À quoi sert le DNS ?
+A) À héberger les fichiers d'un site
+B) À rendre une page interactive
+C) À traduire un nom de domaine en adresse numérique compréhensible par les machines
+D) À afficher les couleurs d'une page
+✅ Bonne réponse : C Le DNS fonctionne comme un annuaire : il permet à ton navigateur de savoir à quelle adresse numérique (IP) correspond un nom de domaine comme "monsite.fr", pour pouvoir ensuite contacter le bon serveur.
+Question 3 — Le HTML, le CSS et le JavaScript, c'est la même chose ?
+A) Oui, ce sont trois noms pour la même technologie
+B) Non : HTML structure le contenu, CSS gère l'apparence, JavaScript gère les interactions
+C) Non, JavaScript et CSS sont la même chose, seul HTML est différent
+D) Oui, mais HTML est une version plus ancienne du CSS
+✅ Bonne réponse : B Ce sont trois langages différents, avec trois rôles différents et complémentaires : HTML pour la structure ("quoi"), CSS pour l'apparence ("comment ça se voit"), JavaScript pour l'interactivité ("comment ça réagit").
+Question 4 — Nom de domaine et hébergement, est-ce la même chose ?
+A) Oui, c'est exactement la même chose
+B) Non : le nom de domaine est l'adresse du site, l'hébergement est le serveur qui stocke ses fichiers
+C) Non, le nom de domaine sert à afficher les images du site
+D) Oui, mais seulement pour les sites en français
+✅ Bonne réponse : B Ce sont deux services distincts (même s'ils sont parfois vendus ensemble par le même prestataire) : le nom de domaine est l'adresse pour te trouver, l'hébergement est l'endroit où vivent réellement les fichiers de ton site.
+

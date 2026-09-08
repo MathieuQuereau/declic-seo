@@ -1,0 +1,9 @@
+US-03 — Faire le quiz d'un chapitre
+
+En tant que visiteur, je veux répondre au quiz QCM à la fin d'un chapitre et voir l'explication de chaque réponse immédiatement, pour vérifier que j'ai bien compris.
+
+Critères d'acceptation :
+- Les questions s'affichent une par une ou en liste selon la densité du chapitre
+- Après chaque réponse, l'explication correspondante s'affiche (bonne ou mauvaise réponse)
+- Le score final est affiché à la fin du quiz
+- Il est possible de refaire le quiz

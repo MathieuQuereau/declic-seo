@@ -1,0 +1,8 @@
+US-05 — Explorer les paliers
+
+En tant que visiteur, je veux voir la liste de tous les paliers et leurs chapitres, pour avoir une vision globale du programme avant de commencer.
+
+Critères d'acceptation :
+- Une page "Programme" liste tous les paliers et chapitres avec leur titre
+- Chaque chapitre est cliquable et mène directement à la page correspondante
+- L'état de chaque chapitre est visible (publié / non publié)

@@ -1,0 +1,8 @@
+US-02 — Lire un chapitre
+
+En tant que visiteur, je veux lire un chapitre complet en suivant les 8 blocs du gabarit, pour apprendre un concept SEO/GEO de façon structurée.
+
+Critères d'acceptation :
+- Le chapitre s'affiche avec tous ses blocs dans l'ordre (accroche, concept, exemple, pratique, jargon, mesure, suite)
+- La mise en page est lisible sur mobile et desktop
+- Un fil d'Ariane indique le palier et le chapitre en cours

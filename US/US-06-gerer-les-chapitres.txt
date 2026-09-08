@@ -1,0 +1,9 @@
+US-06 — Gérer les chapitres (admin)
+
+En tant qu'administrateur, je veux créer, modifier et réordonner les chapitres depuis un back-office, sans toucher au code.
+
+Critères d'acceptation :
+- Interface back-office protégée par authentification admin
+- Éditeur de contenu riche (titres, texte, tableaux, blocs de code)
+- Possibilité de publier / dépublier un chapitre
+- Réordonnancement des chapitres par glisser-déposer

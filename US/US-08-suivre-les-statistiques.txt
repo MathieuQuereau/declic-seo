@@ -1,0 +1,8 @@
+US-08 — Suivre les statistiques de base (admin)
+
+En tant qu'administrateur, je veux voir les statistiques essentielles du site, pour savoir quels chapitres sont les plus consultés et combien d'utilisateurs sont inscrits.
+
+Critères d'acceptation :
+- Dashboard admin avec : nombre de visiteurs, chapitres les plus vus, taux de complétion moyen par palier
+- Export CSV des données basiques
+- Pas besoin d'un outil analytics tiers pour ces métriques de base

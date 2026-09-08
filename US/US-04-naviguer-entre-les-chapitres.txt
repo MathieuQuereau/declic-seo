@@ -1,0 +1,8 @@
+US-04 — Naviguer entre les chapitres
+
+En tant que visiteur, je veux passer facilement au chapitre suivant depuis la fin d'un chapitre, pour avancer dans mon parcours sans chercher.
+
+Critères d'acceptation :
+- Un bouton "Chapitre suivant" est présent en bas de chaque chapitre
+- Un lien "Chapitre précédent" est également disponible
+- Le titre du chapitre suivant est visible sur le bouton
