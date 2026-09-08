@@ -1097,6 +1097,7 @@ section { padding: 60px 0; }
 }
 .nav-toggle span {
   display: block;
+  flex: 0 0 2px;
   width: 20px;
   height: 2px;
   margin: 0 auto;
