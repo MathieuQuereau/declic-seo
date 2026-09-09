@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Comment fonctionne un moteur de recherche ? Crawl, indexation et classement : comprends comment Google explore et classe les pages web.">
+<title>Comment fonctionne un moteur de recherche ? — La Boussole SEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../../" class="logo"><img src="../../logo-la-boussole-seo.png" class="logo-mark" alt="La Boussole SEO"> La Boussole SEO</a>
+    <nav class="main-nav">
+      <a href="../../programme/">Programme</a>
+      <a href="#">À propos</a>
+    </nav>
+    <a href="../../programme/" class="btn btn-primary btn-sm">Voir le programme</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="../../programme/">Programme</a>
+    <a href="#">À propos</a>
+    <a href="../../programme/" class="btn btn-primary">Voir le programme</a>
+  </nav>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="../../programme/">Programme</a> <span>/</span>
+    <a href="../">🟢 Palier 0 — Comprendre le terrain de jeu</a> <span>/</span>
+    <span>Chapitre 2</span>
+  </nav>
+</div>
+
+<section class="chapter-hero">
+  <div class="container">
+    <div class="chapter-hero-grid">
+      <div>
+        <h1>Comment fonctionne un moteur de recherche ?</h1>
+        <div class="chapter-meta">
+          <span>⏱️ Lecture ~11 min</span>
+          <span>🧩 Prérequis : Chapitre 1</span>
+          <span>✅ Quiz en fin de chapitre</span>
+        </div>
+      </div>
+      <div class="chapter-hero-tag">
+        <span class="palier-tag">🟢 Palier 0 · Chapitre 2 sur 5</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container chapter-layout">
+
+  <aside class="chapter-toc">
+    <a href="#accroche" class="active">Accroche</a>
+    <a href="#objectifs">Ce que tu vas apprendre</a>
+    <a href="#concept">Le concept expliqué simplement</a>
+    <a href="#exemple">Exemple concret</a>
+    <a href="#pratique">Comment le mettre en pratique</a>
+    <a href="#jargon">Le jargon de ce chapitre</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#suite">Et après ?</a>
+  </aside>
+
+  <main class="chapter-body">
+
+    <article id="accroche" class="block hook-block">
+      <h2 class="block-kicker"><span class="num">1</span> Accroche</h2>
+      <h3>Comment Google répond-il en moins d'une seconde ?</h3>
+      <p>Il y a plusieurs milliards de pages web sur Internet. Quand tu tapes « meilleure recette de tiramisu » dans Google, il te répond en moins d'une seconde avec une liste de résultats triés et pertinents.</p>
+      <p>Il ne « cherche » pas en temps réel — ce serait trop lent. Ce qu'il fait est bien plus malin : il a préparé le travail à l'avance, en cartographiant une immense partie du web avant même que tu poses ta question.</p>
+    </article>
+
+    <article id="objectifs" class="block">
+      <h2 class="block-kicker"><span class="num">2</span> Ce que tu vas apprendre</h2>
+      <h3>À la fin de ce chapitre, tu sauras</h3>
+      <ul class="objectives-list">
+        <li><span class="tick">✓</span> Ce qu'est le crawl (l'exploration du web par les moteurs)</li>
+        <li><span class="tick">✓</span> Ce qu'est l'indexation (la mise en mémoire des pages explorées)</li>
+        <li><span class="tick">✓</span> Comment un moteur de recherche classe les résultats</li>
+        <li><span class="tick">✓</span> Ce qu'est l'autorité d'un site et pourquoi elle compte</li>
+      </ul>
+    </article>
+
+    <article id="concept" class="block">
+      <h2 class="block-kicker"><span class="num">3</span> Le concept expliqué simplement</h2>
+      <h3>3 étapes, toujours dans le même ordre</h3>
+
+      <h3>Étape 1 — Le crawl (l'exploration)</h3>
+      <p>Les moteurs de recherche envoient en permanence des robots automatiques (des <strong>crawlers</strong>, ou « spiders »). Chez Google, le principal s'appelle <strong>Googlebot</strong>. Ils se déplacent de page en page en suivant les liens.</p>
+      <div class="analogy-card">
+        💡 <strong>Analogie</strong> — imagine un explorateur chargé de cartographier une ville : il part d'un point A, remonte chaque rue, note ce qu'il voit, puis prend chaque intersection pour découvrir de nouvelles rues.
+      </div>
+
+      <h3>Étape 2 — L'indexation (la mise en mémoire)</h3>
+      <p>Une fois une page visitée, Googlebot en envoie une copie dans l'<strong>index</strong> de Google, une immense base de données.</p>
+      <div class="analogy-card">
+        ⚠️ <strong>Point crucial</strong> — ce n'est pas parce qu'une page existe sur le web qu'elle est automatiquement indexée. Sans lien qui pointe vers elle, elle peut très bien n'avoir jamais été trouvée.
+      </div>
+
+      <h3>Étape 3 — Le classement (l'algorithme)</h3>
+      <p>Quand tu poses une question, Google consulte son index et choisit quelles pages afficher en premier, selon des centaines de critères — dont la pertinence, la qualité, l'<strong>autorité</strong>, et l'expérience utilisateur.</p>
+      <div class="analogy-card">
+        💡 <strong>Analogie</strong> — l'autorité d'un site, c'est comme la réputation d'un restaurant : plus tes amis et les guides en disent du bien, plus il inspire confiance.
+      </div>
+    </article>
+
+    <article id="exemple" class="block">
+      <h2 class="block-kicker"><span class="num">4</span> Exemple concret</h2>
+      <h3>Observer une SERP comme un SEO</h3>
+      <p>Tape n'importe quelle question dans Google — par exemple « comment créer un blog ». Sur la page de résultats (la <strong>SERP</strong>), tu vois les titres bleus cliquables (les balises <code>&lt;title&gt;</code>), les courtes descriptions grises (les meta descriptions), et l'ordre des résultats, décidé par l'algorithme.</p>
+    </article>
+
+    <article id="pratique" class="block">
+      <h2 class="block-kicker"><span class="num">5</span> Comment le mettre en pratique</h2>
+      <h3>Ancrer ces notions concrètement</h3>
+
+      <div class="practice-block">
+        <div class="practice-step">
+          <div class="step-num">1</div>
+          <div>
+            <p class="step-title">Observe la SERP comme un SEO</p>
+            <p>Tape un sujet qui te concerne et observe : combien de résultats organiques ? Y a-t-il des annonces « Sponsorisé » ? Des formats enrichis (carte, vidéos) ?</p>
+            <div class="pitfall">⚠️ Piège fréquent : confondre résultats payants (Google Ads) et résultats naturels (SEO). Le SEO ne coûte pas d'argent à Google directement — tu travailles pour le mériter.</div>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">2</div>
+          <div>
+            <p class="step-title">Vérifie si une page est indexée</p>
+            <p>Dans la barre de recherche Google, tape exactement <code>site:monsite.fr</code>. Si le résultat est vide, le site n'est pas indexé ou très peu.</p>
+            <div class="pitfall">⚠️ Piège fréquent : penser qu'un site neuf est automatiquement indexé dès sa mise en ligne. Ça peut prendre de quelques jours à plusieurs semaines.</div>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">3</div>
+          <div>
+            <p class="step-title">Prends conscience de l'échelle</p>
+            <p>Compare <code>site:wikipedia.org</code> (plusieurs dizaines de millions de pages) à <code>site:</code> d'un petit site local (5 à 50 pages). Cette différence, c'est une différence d'autorité et de profondeur de contenu.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="jargon" class="block">
+      <h2 class="block-kicker"><span class="num">6</span> Le jargon de ce chapitre</h2>
+      <h3>Mini-lexique</h3>
+      <table class="jargon-table">
+        <tr><th>Terme</th><th>Définition simple</th></tr>
+        <tr><td>Crawler / Spider</td><td>Programme automatique envoyé par un moteur de recherche pour explorer les pages du web en suivant les liens.</td></tr>
+        <tr><td>Googlebot</td><td>Le nom du crawler principal de Google.</td></tr>
+        <tr><td>Indexation</td><td>Le fait pour Google d'enregistrer une page dans sa base de données après l'avoir crawlée.</td></tr>
+        <tr><td>Index</td><td>La base de données gigantesque de Google contenant une copie analysée de milliards de pages.</td></tr>
+        <tr><td>Algorithme</td><td>Le système de calcul qui décide dans quel ordre classer les pages.</td></tr>
+        <tr><td>SERP</td><td>Search Engine Results Page — la page de résultats de recherche.</td></tr>
+        <tr><td>Autorité</td><td>La « réputation » d'un site aux yeux de Google, mesurée notamment par les liens entrants.</td></tr>
+      </table>
+    </article>
+
+    <article id="quiz" class="block">
+      <h2 class="block-kicker"><span class="num">7</span> Quiz — Vérifie que tu as compris</h2>
+      <div class="quiz-block">
+      <div class="quiz-progress">
+        <span>Question 1/2</span>
+        <div class="progress-track"><div class="progress-fill" style="width:50%"></div></div>
+      </div>
+
+      <div class="quiz-question">
+        <p class="question-title">Question 1 — Dans quel ordre se déroulent les 3 étapes d'un moteur de recherche ?</p>
+        <div class="quiz-options">
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Classement → Indexation → Crawl</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">B</span> Indexation → Crawl → Classement</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">C</span> Crawl → Indexation → Classement</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Classement → Crawl → Indexation</div>
+        </div>
+        <div class="quiz-explain">💡 <span><strong>Bonne réponse : C.</strong> Impossible de classer ce qui n'a pas encore été crawlé et indexé.</span></div>
+      </div>
+
+      <div class="quiz-question" hidden>
+        <p class="question-title">Question 2 — Une page en ligne est-elle forcément dans l'index de Google ?</p>
+        <div class="quiz-options">
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Oui, dès qu'une page est en ligne, Google la trouve automatiquement</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">B</span> Non, une page peut très bien être en ligne sans jamais avoir été indexée</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">C</span> Oui, si le site existe depuis plus de 6 mois</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Non, mais seulement pour un site e-commerce</div>
+        </div>
+        <div class="quiz-explain">💡 <span><strong>Bonne réponse : B.</strong> Sans lien pointant vers elle ni sitemap, Googlebot ne la trouvera peut-être jamais.</span></div>
+      </div>
+
+      <div class="quiz-score" hidden>
+        <div style="font-size:0.85rem;font-weight:700;color:var(--ink-faint);">Ton score</div>
+        <div class="score-num">2/2</div>
+        <p>Parfait ! Tu es prêt pour la suite.</p>
+        <div class="score-actions">
+          <button type="button" class="btn btn-ghost">↻ Refaire le quiz</button>
+          <a href="../chapitre-3/" class="btn btn-primary">Chapitre suivant →</a>
+        </div>
+      </div>
+      </div>
+    </article>
+
+    <article id="suite" class="block">
+      <h2 class="block-kicker"><span class="num">8</span> Et après ?</h2>
+      <h3>La suite logique</h3>
+      <p>Tu sais maintenant comment un moteur de recherche explore, mémorise et classe les pages. Dans le chapitre suivant, on entre dans les spécificités de Google : ses mises à jour, ses outils officiels, et ce qu'il attend vraiment d'un site.</p>
+      <div class="next-card">
+        <div class="next-card-prev-row">
+          <a href="../chapitre-1/">← Chapitre précédent</a>
+        </div>
+        <div class="next-card-body">
+          <div>
+            <div class="label">Chapitre suivant</div>
+            <h3>Comment fonctionne Google, concrètement ?</h3>
+          </div>
+          <a href="../chapitre-3/" class="btn btn-primary">Continuer →</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 La Boussole SEO — Formation libre SEO &amp; GEO</span>
+    <div class="footer-links">
+      <a href="../../programme/">Programme</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll(".chapter-toc a"));
+  var sections = links
+    .map(function (link) { return document.querySelector(link.getAttribute("href")); })
+    .filter(Boolean);
+
+  function setActive(id) {
+    links.forEach(function (link) {
+      link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+    });
+  }
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) setActive(entry.target.id);
+      });
+    },
+    { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+  );
+
+  sections.forEach(function (section) { observer.observe(section); });
+})();
+
+(function () {
+  var toggle = document.querySelector(".nav-toggle");
+  var menu = document.querySelector(".mobile-nav");
+  if (!toggle || !menu) return;
+  toggle.addEventListener("click", function () {
+    var open = menu.classList.toggle("open");
+    toggle.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+})();
+</script>
+<script src="../../quiz.js"></script>
+
+</body>
+</html>
