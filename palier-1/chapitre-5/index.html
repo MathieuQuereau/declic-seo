@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Chapitre a venir : Le sitemap.xml : montrer le chemin a Google. Ce chapitre du palier 1 (L'architecture technique) sera bientot disponible sur La Boussole SEO.">
-<title>Le sitemap.xml : montrer le chemin à Google — La Boussole SEO</title>
+<meta name="description" content="Qu'est-ce qu'un sitemap XML et à quoi sert-il ? Découvre comment vérifier ton sitemap, l'envoyer à Google Search Console et comprendre ses limites pour l'indexation.">
+<title>Sitemap XML : définition, utilité et envoi à Google</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../styles.css">
@@ -44,8 +44,9 @@
       <div>
         <h1>Le sitemap.xml : montrer le chemin à Google</h1>
         <div class="chapter-meta">
-          <span>🚧 Chapitre en préparation</span>
-          <span>✅ Quiz à venir</span>
+          <span>⏱️ Lecture ~8 min</span>
+          <span>🧩 Prérequis : Chapitre 4</span>
+          <span>✅ Quiz en fin de chapitre</span>
         </div>
       </div>
       <div class="chapter-hero-tag">
@@ -72,39 +73,144 @@
 
     <article id="accroche" class="block hook-block">
       <h2 class="block-kicker"><span class="num">1</span> Accroche</h2>
-      <h3>Ce chapitre arrive bientôt</h3>
+      <h3>300 pièces, et aucun plan</h3>
+      <p>Imagine que tu construises une immense maison. Elle possède 300 pièces. Tu invites quelqu'un à la visiter, mais tu ne lui donnes aucun plan. Il pourra probablement trouver certaines pièces. Mais il risque d'en manquer quelques-unes.</p>
+      <p>Sur un site web, c'est un peu la même idée. Les moteurs peuvent découvrir les pages en suivant les liens, mais un site peut également leur fournir un fichier qui liste les URLs qu'il souhaite notamment faire découvrir. Ce fichier s'appelle le <strong>sitemap XML</strong>.</p>
+      <p>Son rôle est beaucoup plus simple qu'il n'y paraît :</p>
       <div class="analogy-card">
-        🚧 <strong>Contenu à venir</strong> — le chapitre « Le sitemap.xml : montrer le chemin à Google » (🟢 Palier 1 — L'architecture technique) est en cours de rédaction. Reviens bientôt pour le découvrir !
+        🎯 <strong>Montrer aux moteurs quelles URLs importantes existent sur ton site.</strong>
       </div>
-      <p>[Placeholder] Accroche du chapitre — à rédiger.</p>
+      <p>Attention toutefois : un sitemap n'est pas une télécommande qui oblige Google à indexer toutes tes pages.</p>
     </article>
 
     <article id="objectifs" class="block">
       <h2 class="block-kicker"><span class="num">2</span> Ce que tu vas apprendre</h2>
       <h3>À la fin de ce chapitre, tu sauras</h3>
       <ul class="objectives-list">
-        <li><span class="tick">✓</span> [Placeholder] Objectif pédagogique 1</li>
-        <li><span class="tick">✓</span> [Placeholder] Objectif pédagogique 2</li>
-        <li><span class="tick">✓</span> [Placeholder] Objectif pédagogique 3</li>
+        <li><span class="tick">✓</span> Ce qu'est un sitemap XML</li>
+        <li><span class="tick">✓</span> À quoi il sert réellement</li>
+        <li><span class="tick">✓</span> Où trouver celui de ton site</li>
+        <li><span class="tick">✓</span> Comment vérifier qu'il fonctionne</li>
+        <li><span class="tick">✓</span> Comment l'envoyer à Google Search Console</li>
+        <li><span class="tick">✓</span> Ce qu'un sitemap ne garantit pas</li>
       </ul>
     </article>
 
     <article id="concept" class="block">
       <h2 class="block-kicker"><span class="num">3</span> Le concept expliqué simplement</h2>
-      <h3>[Placeholder] Titre du concept</h3>
-      <p>[Placeholder] Texte d'explication du concept — à rédiger.</p>
+
+      <h3>Le sitemap, c'est quoi ?</h3>
+      <p>Un sitemap XML est un fichier qui contient une liste d'URLs que tu souhaites notamment signaler aux moteurs de recherche. Il peut ressembler à quelque chose comme :</p>
+      <div class="example-card">
+        <div class="example-bar">🗺️ sitemap.xml</div>
+        <pre>&lt;urlset&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://www.exemple.fr/&lt;/loc&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://www.exemple.fr/services&lt;/loc&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://www.exemple.fr/blog&lt;/loc&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</pre>
+      </div>
+      <p>Tu n'as pas besoin de comprendre chaque ligne. Retiens simplement :</p>
+      <div class="analogy-card">
+        🎯 <strong>Le sitemap est une sorte de plan d'adresses de ton site.</strong>
+      </div>
+
+      <h3>Est-ce que Google suit obligatoirement le sitemap ?</h3>
+      <p>Non. Et c'est une nuance très importante. Un sitemap <strong>aide à la découverte des URLs</strong>, mais il ne garantit ni :</p>
+      <ul class="objectives-list">
+        <li><span class="tick">✗</span> leur exploration</li>
+        <li><span class="tick">✗</span> leur indexation</li>
+        <li><span class="tick">✗</span> leur positionnement</li>
+      </ul>
+      <div class="analogy-card">
+        💡 <strong>Analogie</strong> — tu donnes le plan d'une maison à quelqu'un. Cela lui indique que trois chambres existent. Cela ne signifie pas qu'il va forcément visiter les trois. Le sitemap indique des URLs. Google décide ensuite ce qu'il explore, indexe et affiche.
+      </div>
+
+      <h3>⚠️ Les pièges à éviter</h3>
+      <ul class="objectives-list">
+        <li><span class="tick">✗</span> Croire que le sitemap force l'indexation</li>
+        <li><span class="tick">✗</span> Mettre toutes les URLs du site sans réfléchir</li>
+        <li><span class="tick">✗</span> Inclure des pages supprimées</li>
+        <li><span class="tick">✗</span> Inclure des URLs en erreur</li>
+        <li><span class="tick">✗</span> Penser qu'un sitemap compense une mauvaise architecture</li>
+        <li><span class="tick">✗</span> Ne jamais vérifier son contenu après une refonte</li>
+      </ul>
     </article>
 
     <article id="exemple" class="block">
       <h2 class="block-kicker"><span class="num">4</span> Exemple concret</h2>
-      <h3>[Placeholder] Titre de l'exemple</h3>
-      <p>[Placeholder] Exemple concret illustrant le concept — à rédiger.</p>
+      <h3>2 000 pages produits, 200 toutes nouvelles</h3>
+      <p>Supposons que ton site possède 2 000 pages produits. Certaines sont très bien reliées entre elles. Mais tu viens de créer 200 nouveaux produits. Ton sitemap peut permettre de signaler rapidement ces nouvelles URLs aux moteurs.</p>
+      <p>Il est particulièrement utile pour certains sites :</p>
+      <ul class="objectives-list">
+        <li><span class="tick">•</span> très importants</li>
+        <li><span class="tick">•</span> régulièrement mis à jour</li>
+        <li><span class="tick">•</span> avec de nombreuses pages</li>
+        <li><span class="tick">•</span> avec des pages difficiles à découvrir naturellement</li>
+      </ul>
+      <p>Pour un petit site de cinq pages, son utilité est moins spectaculaire, mais avoir un sitemap propre reste une bonne pratique.</p>
     </article>
 
     <article id="pratique" class="block">
       <h2 class="block-kicker"><span class="num">5</span> Comment le mettre en pratique</h2>
-      <h3>[Placeholder] Titre de la mise en pratique</h3>
-      <p>[Placeholder] Étapes pratiques — à rédiger.</p>
+
+      <div class="practice-block">
+        <div class="practice-step">
+          <div class="step-num">1</div>
+          <div>
+            <p class="step-title">Trouve ton sitemap</p>
+            <p>Commence par essayer <code>https://www.tonsite.fr/sitemap.xml</code>. Selon le CMS ou l'outil utilisé, le sitemap peut être organisé différemment. WordPress, par exemple, peut générer automatiquement des sitemaps.</p>
+            <div class="pitfall">⚠️ Piège fréquent du débutant : croire qu'il existe toujours exactement un fichier <code>sitemap.xml</code>. Certains sites utilisent un sitemap index qui renvoie vers plusieurs sitemaps.</div>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">2</div>
+          <div>
+            <p class="step-title">Ouvre-le</p>
+            <p>Tu dois voir une liste d'URLs ou un fichier qui renvoie vers plusieurs fichiers sitemap. Si tu obtiens une erreur 404, ne panique pas. Ton site peut simplement utiliser une autre adresse.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">3</div>
+          <div>
+            <p class="step-title">Vérifie son contenu</p>
+            <p>Demande-toi :</p>
+            <ul class="objectives-list">
+              <li><span class="tick tick-white">?</span> Les URLs importantes sont-elles présentes ?</li>
+              <li><span class="tick tick-white">?</span> Les URLs inutiles sont-elles exclues ?</li>
+              <li><span class="tick tick-white">?</span> Les URLs renvoient-elles correctement vers des pages accessibles ?</li>
+              <li><span class="tick tick-white">?</span> Le fichier est-il régulièrement mis à jour ?</li>
+            </ul>
+            <p>Un sitemap propre doit être <strong>utile</strong>, pas simplement énorme.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">4</div>
+          <div>
+            <p class="step-title">Ajoute-le à Search Console</p>
+            <p>Dans Google Search Console, tu peux déclarer l'adresse de ton sitemap dans la section dédiée aux sitemaps. Google pourra alors récupérer le fichier et te signaler certaines informations relatives à son traitement.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">5</div>
+          <div>
+            <p class="step-title">Surveille les problèmes</p>
+            <p>Si ton sitemap contient des URLs qui ne devraient pas y être, corrige sa génération. Par exemple, évite d'y mettre volontairement des URLs :</p>
+            <ul class="objectives-list">
+              <li><span class="tick">✗</span> bloquées</li>
+              <li><span class="tick">✗</span> supprimées</li>
+              <li><span class="tick">✗</span> redirigées</li>
+              <li><span class="tick">✗</span> en erreur</li>
+              <li><span class="tick">✗</span> qui ne sont pas des pages que tu souhaites réellement faire découvrir</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </article>
 
     <article id="jargon" class="block">
@@ -112,20 +218,72 @@
       <h3>Mini-lexique</h3>
       <table class="jargon-table">
         <tr><th>Terme</th><th>Définition simple</th></tr>
-        <tr><td>[Placeholder]</td><td>[Placeholder] Définition à venir.</td></tr>
+        <tr><td>Sitemap</td><td>Fichier qui liste des URLs d'un site.</td></tr>
+        <tr><td>XML</td><td>Format utilisé notamment pour structurer des données.</td></tr>
+        <tr><td>Sitemap index</td><td>Fichier qui référence plusieurs sitemaps.</td></tr>
+        <tr><td>URL</td><td>Adresse d'une page web.</td></tr>
+        <tr><td>Search Console</td><td>Outil de Google permettant notamment de suivre l'exploration, l'indexation et les performances.</td></tr>
+        <tr><td>Indexation</td><td>Enregistrement d'une page dans l'index d'un moteur.</td></tr>
       </table>
     </article>
 
     <article id="quiz" class="block">
       <h2 class="block-kicker"><span class="num">7</span> Quiz — Vérifie que tu as compris</h2>
-      <div class="analogy-card">
-        🚧 <strong>Quiz à venir</strong> — disponible dès la publication de ce chapitre.
+      <div class="quiz-block">
+      <div class="quiz-progress">
+        <span>Question 1/3</span>
+        <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
+      </div>
+
+      <div class="quiz-question">
+        <p class="question-title">Question 1 — À quoi sert principalement un sitemap ?</p>
+        <div class="quiz-options">
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Accélérer automatiquement le site</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">B</span> Modifier le design</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">C</span> Remplacer les backlinks</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">D</span> Lister des URLs que l'on souhaite notamment signaler aux moteurs</div>
+        </div>
+        <div class="quiz-explain">💡 <span><strong>Bonne réponse : D.</strong> Un sitemap XML est avant tout une liste d'URLs destinée à aider les moteurs à découvrir les pages d'un site.</span></div>
+      </div>
+
+      <div class="quiz-question" hidden>
+        <p class="question-title">Question 2 — Un sitemap garantit-il l'indexation d'une URL ?</p>
+        <div class="quiz-options">
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Oui</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">B</span> Non</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">C</span> Seulement sur WordPress</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Seulement si elle est dans le menu</div>
+        </div>
+        <div class="quiz-explain">💡 <span><strong>Bonne réponse : B.</strong> Le sitemap aide à la découverte des URLs, mais Google décide ensuite librement de ce qu'il explore, indexe et affiche.</span></div>
+      </div>
+
+      <div class="quiz-question" hidden>
+        <p class="question-title">Question 3 — Peut-on mettre n'importe quelle URL dans un sitemap ?</p>
+        <div class="quiz-options">
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Oui</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">B</span> Non, il doit rester cohérent et contenir des URLs pertinentes et accessibles</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">C</span> Oui, mais uniquement les URLs en erreur</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Seulement les pages d'accueil</div>
+        </div>
+        <div class="quiz-explain">💡 <span><strong>Bonne réponse : B.</strong> Un bon sitemap reste propre et cohérent : il ne doit contenir que des URLs pertinentes, accessibles, et que l'on souhaite réellement faire découvrir.</span></div>
+      </div>
+
+      <div class="quiz-score" hidden>
+        <div style="font-size:0.85rem;font-weight:700;color:var(--ink-faint);">Ton score</div>
+        <div class="score-num">3/3</div>
+        <p>Bravo, le sitemap n'a plus de secret pour toi !</p>
+        <div class="score-actions">
+          <button type="button" class="btn btn-ghost">↻ Refaire le quiz</button>
+          <a href="../chapitre-6/" class="btn btn-primary">Chapitre suivant →</a>
+        </div>
+      </div>
       </div>
     </article>
 
     <article id="suite" class="block">
       <h2 class="block-kicker"><span class="num">8</span> Et après ?</h2>
-      <h3>La suite du programme</h3>
+      <h3>La suite logique</h3>
+      <p>Tu sais maintenant comment aider Google à découvrir les pages de ton site. Mais certaines pages modernes posent un problème supplémentaire : leur contenu est généré ou modifié par <strong>JavaScript</strong>. Et là, la situation devient un peu plus complexe.</p>
       <div class="next-card">
         <div class="next-card-prev-row">
           <a href="../chapitre-4/">← Chapitre précédent</a>
@@ -190,6 +348,7 @@
   });
 })();
 </script>
+<script src="../../quiz.js"></script>
 
 </body>
 </html>
