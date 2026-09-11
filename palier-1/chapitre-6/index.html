@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Chapitre a venir : Le rendu JavaScript et le crawl budget. Ce chapitre du palier 1 (L'architecture technique) sera bientot disponible sur La Boussole SEO.">
-<title>Le rendu JavaScript et le crawl budget — La Boussole SEO</title>
+<meta name="description" content="Qu'est-ce que le rendu JavaScript et le crawl budget ? Découvre comment JavaScript influence l'exploration de ton site et comment repérer les problèmes de crawl.">
+<title>Rendu JavaScript et crawl budget : comprendre le SEO technique</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../styles.css">
@@ -44,8 +44,9 @@
       <div>
         <h1>Le rendu JavaScript et le crawl budget</h1>
         <div class="chapter-meta">
-          <span>🚧 Chapitre en préparation</span>
-          <span>✅ Quiz à venir</span>
+          <span>⏱️ Lecture ~9 min</span>
+          <span>🧩 Prérequis : Chapitre 5</span>
+          <span>✅ Quiz en fin de chapitre</span>
         </div>
       </div>
       <div class="chapter-hero-tag">
@@ -72,39 +73,127 @@
 
     <article id="accroche" class="block hook-block">
       <h2 class="block-kicker"><span class="num">1</span> Accroche</h2>
-      <h3>Ce chapitre arrive bientôt</h3>
-      <div class="analogy-card">
-        🚧 <strong>Contenu à venir</strong> — le chapitre « Le rendu JavaScript et le crawl budget » (🟢 Palier 1 — L'architecture technique) est en cours de rédaction. Reviens bientôt pour le découvrir !
-      </div>
-      <p>[Placeholder] Accroche du chapitre — à rédiger.</p>
+      <h3>Google voit-il vraiment la même chose que toi ?</h3>
+      <p>Tu ouvres une page web. Tout semble parfaitement normal. Tu vois : un titre, du texte, des images, des boutons, des produits. Tu te dis : « Google voit exactement la même chose que moi. »</p>
+      <p>Pas forcément. Certains sites utilisent énormément de JavaScript pour construire ou modifier leur contenu. Et lorsqu'un moteur explore une page, il doit parfois aller plus loin que le simple téléchargement du HTML initial.</p>
+      <p>C'est là qu'interviennent deux notions importantes : <strong>le rendu JavaScript</strong> et <strong>le crawl budget</strong>. Pas de panique : les termes semblent compliqués, mais l'idée générale est assez simple.</p>
     </article>
 
     <article id="objectifs" class="block">
       <h2 class="block-kicker"><span class="num">2</span> Ce que tu vas apprendre</h2>
       <h3>À la fin de ce chapitre, tu sauras</h3>
       <ul class="objectives-list">
-        <li><span class="tick">✓</span> [Placeholder] Objectif pédagogique 1</li>
-        <li><span class="tick">✓</span> [Placeholder] Objectif pédagogique 2</li>
-        <li><span class="tick">✓</span> [Placeholder] Objectif pédagogique 3</li>
+        <li><span class="tick">✓</span> Ce qu'est JavaScript</li>
+        <li><span class="tick">✓</span> Ce qu'on appelle le rendu d'une page</li>
+        <li><span class="tick">✓</span> Pourquoi JavaScript peut compliquer l'exploration d'un site</li>
+        <li><span class="tick">✓</span> Ce qu'est le crawl budget</li>
+        <li><span class="tick">✓</span> Pourquoi cette notion concerne surtout les sites importants</li>
+        <li><span class="tick">✓</span> Comment repérer les problèmes les plus courants</li>
       </ul>
     </article>
 
     <article id="concept" class="block">
       <h2 class="block-kicker"><span class="num">3</span> Le concept expliqué simplement</h2>
-      <h3>[Placeholder] Titre du concept</h3>
-      <p>[Placeholder] Texte d'explication du concept — à rédiger.</p>
+
+      <h3>JavaScript, petit rappel</h3>
+      <p>Le JavaScript ajoute notamment des comportements et interactions. Mais JavaScript peut aussi servir à <strong>modifier ou générer du contenu après le chargement initial de la page</strong>. Par exemple :</p>
+      <div class="example-card">
+        <div class="example-bar">⚙️ rendu.txt</div>
+        <pre>HTML initial
+     │
+JavaScript
+     │
+Contenu affiché</pre>
+      </div>
+      <p>Le navigateur reçoit d'abord certaines ressources. Puis il exécute le JavaScript. La page peut alors changer.</p>
+
+      <h3>Le rendu, c'est quoi ?</h3>
+      <p>Le <strong>rendu</strong> correspond, en simplifiant, au processus qui permet de transformer les ressources et le code d'une page en une représentation exploitable et affichable. Pour un moteur de recherche, cela peut notamment impliquer l'exécution de JavaScript afin de comprendre le contenu final d'une page.</p>
+      <div class="analogy-card">
+        💡 <strong>Analogie</strong> — imagine qu'on te donne le plan d'une maison. Sur le plan, certaines pièces sont déjà dessinées. Mais une partie des cloisons n'est construite qu'après l'arrivée des ouvriers. Tu peux comprendre le plan initial. Mais pour voir la maison finale, tu dois attendre la construction. JavaScript peut parfois jouer un rôle similaire.
+      </div>
+
+      <h3>Et le crawl budget ?</h3>
+      <p>Le crawl budget est une notion qui concerne surtout les <strong>sites importants ou complexes</strong>. Les moteurs disposent de ressources limitées pour explorer le Web. Ils doivent donc décider :</p>
+      <ul class="objectives-list">
+        <li><span class="tick tick-white">?</span> Quelles pages explorer ?</li>
+        <li><span class="tick tick-white">?</span> Quand revenir ?</li>
+        <li><span class="tick tick-white">?</span> Combien de ressources consacrer à ce site ?</li>
+      </ul>
+      <p>Le crawl budget désigne, de manière simplifiée, <strong>la quantité d'exploration qu'un moteur peut consacrer à un site dans un contexte donné</strong>.</p>
+      <div class="pitfall">⚠️ Piège fréquent du débutant : croire que chaque site dispose d'un nombre fixe de « crédits de crawl » qu'il doit économiser. Ce n'est pas aussi simple. Pour un petit site de 30 pages, le crawl budget n'est généralement pas le problème principal. Pour un grand e-commerce de plusieurs millions d'URLs, en revanche, la question devient beaucoup plus importante.</div>
+
+      <h3>⚠️ Les pièges à éviter</h3>
+      <ul class="objectives-list">
+        <li><span class="tick">✗</span> Penser que JavaScript est mauvais pour le SEO</li>
+        <li><span class="tick">✗</span> Croire que Google ne sait pas exécuter JavaScript</li>
+        <li><span class="tick">✗</span> Parler de crawl budget sur un site de 20 pages comme d'un problème majeur</li>
+        <li><span class="tick">✗</span> Générer des milliers d'URLs inutiles</li>
+        <li><span class="tick">✗</span> Cacher des contenus importants derrière des interactions complexes</li>
+        <li><span class="tick">✗</span> Confondre crawl, rendu et indexation</li>
+      </ul>
     </article>
 
     <article id="exemple" class="block">
       <h2 class="block-kicker"><span class="num">4</span> Exemple concret</h2>
-      <h3>[Placeholder] Titre de l'exemple</h3>
-      <p>[Placeholder] Exemple concret illustrant le concept — à rédiger.</p>
+      <h3>2 millions d'URLs, pour combien de pages utiles ?</h3>
+      <p>Imagine un site e-commerce avec 2 millions d'URLs. Certaines sont utiles. D'autres sont générées automatiquement :</p>
+      <div class="example-card">
+        <div class="example-bar">🔗 urls.txt</div>
+        <pre>/produit-chaussures
+/produit-chaussures?couleur=rouge
+/produit-chaussures?couleur=noir
+/produit-chaussures?taille=42
+/produit-chaussures?tri=prix
+...</pre>
+      </div>
+      <p>Si le site génère énormément de variantes, les moteurs peuvent dépenser une partie de leurs ressources à explorer des URLs peu intéressantes.</p>
+      <p>Le problème n'est donc pas « Google n'a pas assez de puissance. »</p>
+      <div class="analogy-card">
+        🎯 <strong>Le vrai problème</strong> — comment faire en sorte que les ressources d'exploration soient consacrées aux bonnes pages ?
+      </div>
     </article>
 
     <article id="pratique" class="block">
       <h2 class="block-kicker"><span class="num">5</span> Comment le mettre en pratique</h2>
-      <h3>[Placeholder] Titre de la mise en pratique</h3>
-      <p>[Placeholder] Étapes pratiques — à rédiger.</p>
+
+      <div class="practice-block">
+        <div class="practice-step">
+          <div class="step-num">1</div>
+          <div>
+            <p class="step-title">Identifie si ton site utilise beaucoup de JavaScript</p>
+            <p>Si tu utilises React, Vue, Angular, Next.js, un gros framework front-end, ou simplement beaucoup de scripts personnalisés, ton site peut dépendre davantage du rendu JavaScript. Mais utiliser JavaScript ne signifie pas automatiquement avoir un problème SEO.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">2</div>
+          <div>
+            <p class="step-title">Compare le HTML initial et la page affichée</p>
+            <p>Ouvre une page importante. Regarde son code source. Puis utilise les outils de développement de ton navigateur pour inspecter le DOM final. Cherche les différences. Si ton contenu SEO important n'existe qu'après l'exécution de JavaScript, il mérite une vérification plus approfondie.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">3</div>
+          <div>
+            <p class="step-title">Vérifie tes liens</p>
+            <p>Un lien important doit idéalement être présent sous une forme que les moteurs peuvent découvrir et traiter correctement. Évite de construire toute la navigation uniquement autour de comportements JavaScript complexes.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">4</div>
+          <div>
+            <p class="step-title">Pour les gros sites, regarde les URLs explorées</p>
+            <p>Google Search Console et les outils d'analyse de logs peuvent aider à comprendre ce que les robots explorent. Tu peux chercher : les URLs inutiles, les paramètres, les pages générées automatiquement, les erreurs répétées, les redirections en chaîne.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <div class="step-num">5</div>
+          <div>
+            <p class="step-title">Ne cherche pas à optimiser le crawl budget trop tôt</p>
+            <p>Si ton site possède 40 pages, ne passe pas trois semaines à optimiser ton crawl budget. Commence par : créer de bonnes pages, construire une architecture claire, avoir un maillage cohérent, éviter les erreurs techniques évidentes. Le crawl budget deviendra réellement stratégique lorsque la taille ou la complexité de ton site le justifiera.</p>
+          </div>
+        </div>
+      </div>
     </article>
 
     <article id="jargon" class="block">
@@ -112,20 +201,72 @@
       <h3>Mini-lexique</h3>
       <table class="jargon-table">
         <tr><th>Terme</th><th>Définition simple</th></tr>
-        <tr><td>[Placeholder]</td><td>[Placeholder] Définition à venir.</td></tr>
+        <tr><td>JavaScript</td><td>Langage permettant notamment de rendre les pages interactives et dynamiques.</td></tr>
+        <tr><td>Rendu</td><td>Processus permettant notamment de construire la représentation finale d'une page.</td></tr>
+        <tr><td>Crawl</td><td>Exploration des pages par un robot.</td></tr>
+        <tr><td>Crawl budget</td><td>Ressources d'exploration qu'un moteur peut consacrer à un site.</td></tr>
+        <tr><td>DOM</td><td>Structure de la page telle qu'elle est représentée après traitement.</td></tr>
+        <tr><td>URL</td><td>Adresse d'une ressource web.</td></tr>
       </table>
     </article>
 
     <article id="quiz" class="block">
       <h2 class="block-kicker"><span class="num">7</span> Quiz — Vérifie que tu as compris</h2>
-      <div class="analogy-card">
-        🚧 <strong>Quiz à venir</strong> — disponible dès la publication de ce chapitre.
+      <div class="quiz-block">
+      <div class="quiz-progress">
+        <span>Question 1/3</span>
+        <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
+      </div>
+
+      <div class="quiz-question">
+        <p class="question-title">Question 1 — JavaScript est-il forcément mauvais pour le SEO ?</p>
+        <div class="quiz-options">
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Seulement sur mobile</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">B</span> Seulement sur WordPress</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">C</span> Oui</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">D</span> Non</div>
+        </div>
+        <div class="quiz-explain">💡 <span><strong>Bonne réponse : D.</strong> Google sait exécuter du JavaScript. Utiliser JavaScript ne pose problème que si le contenu important n'est pas accessible ou correctement rendu.</span></div>
+      </div>
+
+      <div class="quiz-question" hidden>
+        <p class="question-title">Question 2 — Qu'est-ce que le crawl budget ?</p>
+        <div class="quiz-options">
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Le budget publicitaire</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">B</span> Une notion liée aux ressources d'exploration qu'un moteur peut consacrer à un site</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">C</span> Le nombre de mots d'une page</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Le nombre de backlinks</div>
+        </div>
+        <div class="quiz-explain">💡 <span><strong>Bonne réponse : B.</strong> Le crawl budget désigne la quantité d'exploration qu'un moteur consacre à un site donné.</span></div>
+      </div>
+
+      <div class="quiz-question" hidden>
+        <p class="question-title">Question 3 — Le crawl budget est-il une priorité pour un site de 20 pages ?</p>
+        <div class="quiz-options">
+          <div class="quiz-option" data-correct="false"><span class="letter">A</span> Oui, absolument</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">B</span> Seulement si le site est en HTTPS</div>
+          <div class="quiz-option" data-correct="true"><span class="letter">C</span> Non, généralement pas</div>
+          <div class="quiz-option" data-correct="false"><span class="letter">D</span> Seulement avec WordPress</div>
+        </div>
+        <div class="quiz-explain">💡 <span><strong>Bonne réponse : C.</strong> Le crawl budget devient stratégique surtout pour les sites de grande taille ou très complexes, pas pour un petit site.</span></div>
+      </div>
+
+      <div class="quiz-score" hidden>
+        <div style="font-size:0.85rem;font-weight:700;color:var(--ink-faint);">Ton score</div>
+        <div class="score-num">3/3</div>
+        <p>Bravo, le rendu JavaScript et le crawl budget n'ont plus de secret pour toi !</p>
+        <div class="score-actions">
+          <button type="button" class="btn btn-ghost">↻ Refaire le quiz</button>
+          <a href="../chapitre-7/" class="btn btn-primary">Chapitre suivant →</a>
+        </div>
+      </div>
       </div>
     </article>
 
     <article id="suite" class="block">
       <h2 class="block-kicker"><span class="num">8</span> Et après ?</h2>
-      <h3>La suite du programme</h3>
+      <h3>La suite logique</h3>
+      <p>Ton site peut maintenant être exploré, organisé et compris. Mais il reste une autre question fondamentale : est-ce que les échanges entre ton navigateur et ton site sont sécurisés ? C'est là qu'intervient le <strong>HTTPS</strong>.</p>
       <div class="next-card">
         <div class="next-card-prev-row">
           <a href="../chapitre-5/">← Chapitre précédent</a>
@@ -190,6 +331,7 @@
   });
 })();
 </script>
+<script src="../../quiz.js"></script>
 
 </body>
 </html>
